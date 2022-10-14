@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+  box-sizing: border-box;
+}
+:root {
+  --font-tittle: "Playfair Display", serif;
+  --font-text: "Lora", serif;
+  --font-title-products: "Work Sans", sans-serif;
+  --typography-color:#575757;
+  --typography-color2:#333333;
+  --labels-color:#529F0F;
+  --Hover:#529F0F;
+}
+body {
+  background-color: white;
+}
+/*Header and nav*/
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 33.33%;
+}
+.nav-menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  justify-content: space-evenly;
+  font-family: var(--font-title-products);
+  font-weight: bold;
+  color: black;
+}
+.nav-menu li {
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+  object-fit: contain;
+}
+.logo img {
+  width: 50%;
+  padding: 0px;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 33.33%;
+  align-items: center;
+}
+#select-coin {
+  border: none;
+}
+.cart-img {
+  width: 20%;
+  padding: 0;
+}
+.cart img {
+  width: 100%;
+}
+
+/*Home image*/
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.home-img {
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  position: relative;
+  display: inline-block;
+  
+}
+.home-img img {
+  width: 100%;
+  padding: 0px;
+  z-index: -1;
+}
+.text-home-img1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-tittle);
+  font-size: 60px;
+  z-index: 1;
+}
+.text-home-img2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-title-products);
+  font-size: 20px;
+  font-weight: 900;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*Sale*/
+.sale-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.banner{
+  position: relative;
+  display: inline-block;
+}
+.sale-container img{
+  padding: 0px;
+}
+.banner .discount{
+  position: absolute;
+  font-family: var(--font-title-products);
+  color:var(--labels-color);
+  font-size: 40px;
+  padding: 0px;
+  transform: translate(20% -80%);
+}
+.season{
+  position: absolute;
+  font-family: var(--font-tittle);
+  color: var(--typography-color);
+  font-size: 20px;
+}
+
+/*Lastest products*/
+.lastest-products{
+  width: 1000px;
+  height: 1000px;
+}
