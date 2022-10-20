@@ -29,7 +29,7 @@ header {
   flex-direction: row;
   width: 33.33%;
 }
-.nav-menu ul {
+.nav-menu ul, .logos {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -154,6 +154,7 @@ header {
   padding-top: 7%;
   position: relative;
   margin-bottom: 2%;
+  text-align: center;
 }
 .lastest-products p,
 .new-products p {
@@ -212,7 +213,7 @@ del {
   z-index: 9999;
 }
 /*testimony*/
-section .sheet {
+section .sheet, .logos {
   padding: 5% 0% 5% 0%;
   text-align: center;
   color: #575757;
@@ -282,11 +283,55 @@ section .sheet {
 }
 /*Latest news*/
 .latest-news{
-
+  text-align: start;
+}
+.latest-news img{
+  padding: 4%;
+}
+.latest-news span{
+  color: var(--labels-color);
+  margin-top: 5%;
+  font-size: 14px;
+  font-family: var(--font-text-lora);
+  padding: 0% 4% 0% 4%;
+}
+.latest-news h3 {
+  font-size: clamp(1.375rem,2vw,1.5rem);
+  font-family: var(--font-tittle-playfair);
+  color: var(--typography-color2);
+  padding: 3% 4% 0% 4%;
+}
+.latest-news p{
+  font-family: var(--font-text-lora);
+  font-size: 17px;
+  margin-bottom: 25px;
+  padding: 4% 4% 0% 4%;
+}
+.latest-news a{
+  font-size: 12px;
+  padding-bottom: 3%;
+  padding: 0% 4% 0% 4%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.logos{
+  flex-flow: row wrap;
+}
+footer{
+  display: flex;
+  flex-grow: row wrap;
+  padding: 5% 0% 5% 0%;
+  background: #f3f3f3;
+}
+footer ul{
+  list-style: none;
 }
 @media (max-width:1366px) {
   .lastest-products p, .new-products p {
     max-width: 565px;
+  }
+  .logos{
+    display: hidden;
   }
 }
 @media (max-width:1024px) {
