@@ -2,17 +2,15 @@
 
 * {
   margin: 0;
-
   box-sizing: border-box;
 }
 :root {
-  --font-tittle: "Playfair Display", serif;
-  --font-text: "Lora", serif;
-  --font-title-products: "Work Sans", sans-serif;
+  --font-tittle-playfair: "Playfair Display", serif;
+  --font-text-lora: "Lora", serif;
+  --font-title-products-worksans: "Work Sans", sans-serif;
   --typography-color: #575757;
   --typography-color2: #333333;
   --labels-color: #529f0f;
-  --Hover: #529f0f;
 }
 body {
   background-color: white;
@@ -43,7 +41,7 @@ h1{
   list-style: none;
   padding: 10px;
   justify-content: space-evenly;
-  font-family: var(--font-title-products);
+  font-family: var(--font-title-products-worksans);
   font-weight: bold;
   color: black;
   font-size: 0.75rem;
@@ -104,8 +102,7 @@ section {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: var(--font-tittle);
-  font-size: clamp(0.625rem, 3vw, 3.75rem);
+  font-family: var(--font-tittle-playfair);
   z-index: 1;
   font-weight: 400;
 }
@@ -114,7 +111,7 @@ section {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: var(--font-title-products);
+  font-family: var(--font-title-products-worksans);
   font-size: clamp(0.313rem, 1vw, 1.875rem);
   font-weight: 900;
   z-index: 2;
@@ -143,41 +140,41 @@ section {
   transform: translateY(-25%);
 }
 .banner h4 {
-  font-family: var(--font-text);
+  font-family: var(--font-text-lora);
   color: var(--labels-color);
   font-size: clamp(0.438rem, 2.5vw, 2.375rem);
   font-weight: 100;
 }
 .banner h5 {
-  font-family: var(--font-title-products);
+  font-family: var(--font-title-products-worksans);
   color: var(--typography-color);
   font-size: clamp(0.25rem, 1vw, 0.75rem);
   font-weight: bold;
 }
 /*Lastest products*/
-.lastest-products{
+.lastest-products,.new-products, .newsletter{
   background-image: url(../img/bg-1.jpg);
   margin-top: 5%;
-  margin-bottom:10%;
+  margin-bottom:5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-bottom: 10%;
 }
-.lastest-products h1{
-  font-family: var(--font-tittle);
+.lastest-products h1,.new-products h1, .newsletter h1{
+  font-family: var(--font-tittle-playfair);
   font-weight: 100;
   padding-top:7%;
   position: relative;
   margin-bottom: 2%;
 }
-.lastest-products p{
+.lastest-products p,.new-products p{
   text-align: center;
   margin-bottom: 3%;
   font-size: clamp(0.7rem, 1.5vw, 2rem);
 }
-.lastest-products-cards {
+.lastest-products-cards, .new-products-cards{
   display: flex;
   flex-flow: row wrap;
   margin: auto;
@@ -186,30 +183,83 @@ section {
   padding-left: 7%;
   padding-right: 7%;
 }
-.lastest-products-cards img{
+.lastest-products-cards img, .card-new-product img{
   width: 80%;
   align-self: center;
+  border: #ececec solid 1px;
 }
-.card-last-product{
+.card-last-product, .card-new-product{
   display: flex;
   flex-direction: column;
   width:25%;
+  position: relative;
+  z-index: 1;
 }
-.card-last-product p{
+.card-last-product p, .card-new-product p{
   text-align: start;
   padding:10% 0% 0% 10%;
   color: var(--typography-color);
-  font-family: var(--font-title-products);
+  font-family: var(--font-title-products-worksans);
   font-size:clamp(0.625rem,1.2vw,1.25rem);
-
 }
-.card-last-product .price{
+.card-last-product .price, .card-new-product .price{
   font-size:clamp(0.39rem,1vw,0.65rem);
   padding:2px 0% 0% 10%;
   font-weight: 700;
 }
 del{
   font-weight: 100;
+}
+.card-last-product .discount ::after{
+  display: block;
+  content:attr(data-content);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--labels-color);
+  z-index:9999;
+}
+/*testimony*/
+section .sheet{
+  text-align: center;
+  color: #575757;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+.sheet img{
+  width: 12%;
+  align-self: center;
+  padding-bottom: 3%;
+}
+.sheet h4{
+  font-family: var(--font-text-lora);
+  font-style: italic;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+.sheet h6{
+  color: var(--typography-color);
+  font-family: var(--font-title-products-worksans);
+  padding-bottom: 2%;
+}
+.sheet .customer{
+  font-weight: 300;
+}
+/*New products*/
+.new-products{
+  background:#f3f3f3;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-bottom: 5%;
+}
+/*Newsletter*/
+.newsletter{
+  background-image: url(../img/bg-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 5%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
