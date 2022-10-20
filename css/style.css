@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Work+Sans&display=swap");
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -64,12 +63,12 @@ header {
 #select-coin {
   border: none;
   font-size: 14px;
-
 }
 .cart img {
   width: 4%;
   height: 60%;
   margin-left: 2%;
+  cursor: pointer;
 }
 /*Home image*/
 .home-img{
@@ -99,7 +98,6 @@ header {
   font-size: clamp(1.063rem, 1vw, 1.875rem);
   font-weight: 800;
   cursor: pointer;
-
 }
 /*Sale*/
 .sale-container {
@@ -118,10 +116,10 @@ header {
 .banner-content {
   position: absolute;
   inset: 0;
-  height: 50px;
-  margin: auto;
-  margin-left: 15px;
-  transform: translateY(-25%);
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80px;
 }
 .banner h4 {
   font-family: var(--font-text-lora);
@@ -132,7 +130,7 @@ header {
 .banner h5 {
   font-family: var(--font-title-products-worksans);
   color: var(--typography-color);
-  font-size: clamp(0.7rem, 1vw, 0.75rem);
+  font-size: clamp(0.875rem, 1vw, 0.75rem);
   font-weight: bold;
 }
 /*Lastest products*/
@@ -141,7 +139,6 @@ header {
 .newsletter {
   background-image: url(../img/bg-1.jpg);
   margin-top: 5%;
-  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -150,8 +147,9 @@ header {
 }
 .lastest-products h1,
 .new-products h1,
-.newsletter h1 {
+.newsletter h1, .latest-news h1{
   font-family: var(--font-tittle-playfair);
+  font-size: clamp(1.875rem, 4vw, 2.375rem);
   font-weight: 100;
   padding-top: 7%;
   position: relative;
@@ -162,13 +160,13 @@ header {
   max-width: 765px;
   text-align: center;
   margin-bottom: 3%;
-  font-size: clamp(0.875rem, 1.5vw, 2.375rem);
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 }
 .lastest-products-cards,
 .new-products-cards {
   display: flex;
   flex-flow: row wrap;
-  margin: auto;
+  justify-content: space-evenly;
   width: 100%;
   padding-left: 7%;
   padding-right: 7%;
@@ -183,7 +181,7 @@ header {
 .card-new-product {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 23%;
   position: relative;
   z-index: 1;
 }
@@ -205,7 +203,7 @@ del {
   font-weight: 100;
 }
 .card-last-product .discount ::after {
-  display: block;
+  position: absolute;
   content: attr(data-content);
   width: 150px;
   height: 150px;
@@ -215,13 +213,11 @@ del {
 }
 /*testimony*/
 section .sheet {
+  padding: 5% 0% 5% 0%;
   text-align: center;
   color: #575757;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
 }
 .sheet img {
-  width: 12%;
   align-self: center;
   padding-bottom: 3%;
 }
@@ -229,7 +225,7 @@ section .sheet {
   font-family: var(--font-text-lora);
   font-style: italic;
   font-weight: 300;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   font-size: clamp(1.25rem,3vw,1.375rem);
 }
 .sheet h6 {
@@ -242,11 +238,12 @@ section .sheet {
   font-weight: 300;
 }
 /*New products*/
-.new-products {
+.new-products,.latest-news {
   background: #f3f3f3;
   margin-top: 0%;
   margin-bottom: 0%;
   padding-bottom: 5%;
+  text-align: center;
 }
 /*Newsletter*/
 .newsletter {
@@ -263,7 +260,7 @@ section .sheet {
   width:40%;
 }
 .newsletter h1{
-  font-size: clamp(0.625rem, 3vw, 3.75rem);
+  font-size: clamp(1.5rem, 3vw, 3.75rem);
 }
 .newsletter input {
   background: transparent;
@@ -283,9 +280,39 @@ section .sheet {
   font-family: var(--font-title-products-worksans);
   text-align: center;
 }
+/*Latest news*/
+.latest-news{
+
+}
 @media (max-width:1366px) {
   .lastest-products p, .new-products p {
     max-width: 565px;
+  }
+}
+@media (max-width:1024px) {
+  body {
+    padding: 25px 30px 0px 30px;
+  }
+  .home-img{
+    height: 45vh;
+  } 
+  .card-last-product,
+  .card-new-product {
+    width: 30%;
+  }
+  .email-suscribe {
+    width:80%;
+  }
+  .newsletter input{
+    width: 70%;
+    font-size: 15px;
+  }
+  .newsletter button{
+    width: 30%;
+    font-size: 15px;
+  }
+  .newsletter h1{
+    font-size: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -298,10 +325,14 @@ section .sheet {
   .card-last-product,
   .card-new-product {
     width: 100%;
+
   }
+  .lastest-products-cards,
+.new-products-cards {
+  padding:2% 0;
+}
   .lastest-products,
-  .new-products,
-  .newsletter {
+  .new-products {
     background:#f3f3f3;
     padding-left: 5%;
     padding-right: 5%;
@@ -310,7 +341,13 @@ section .sheet {
     font-size: 30px;
   }
   .email-suscribe {
-    width:80%;
+    width:90%;
+  }
+  .newsletter input{
+    width: 65%;
+  }
+  .newsletter button{
+    width: 35%;
   }
 
 }
