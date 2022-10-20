@@ -27,6 +27,9 @@ header {
   width: 100%;
   margin-bottom: 2%;
 }
+h1{
+  font-size: clamp(0.625rem, 3vw, 3.75rem);
+}
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -52,14 +55,11 @@ header {
   display: flex;
   width: 33.33%;
   justify-content: center;
-  object-fit: contain;
   align-items: center;
 }
 .logo img {
-  padding: 0px;
+  width: 50%;
   cursor: pointer;
-  width: 40%;
-  height: 70%;
 }
 .cart {
   display: flex;
@@ -120,18 +120,14 @@ section {
   z-index: 2;
   cursor: pointer;
 }
-
-@media (min-width: 480px) {
-}
 /*Sale*/
-.sale-container {
-  position: relative;
+.sale-container{
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 5%;
-  padding: 0% 5% 0% 5%;
+  gap: 5%;
+  padding: 0% 10% 0% 10%;
 }
-.sale-container img {
+.sale-container img{
   padding: 0px;
   width: 100%;
 }
@@ -153,71 +149,71 @@ section {
   font-weight: 100;
 }
 .banner h5 {
-
   font-family: var(--font-title-products);
   color: var(--typography-color);
   font-size: clamp(0.25rem, 1vw, 0.75rem);
   font-weight: bold;
 }
-
-/*.banner1 {
-  width: 50%;
+/*Lastest products*/
+.lastest-products{
+  background-image: url(../img/bg-1.jpg);
+  margin-top: 5%;
+  margin-bottom:10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+.lastest-products h1{
+  font-family: var(--font-tittle);
+  font-weight: 100;
+  padding-top:7%;
+  position: relative;
+  margin-bottom: 2%;
+}
+.lastest-products p{
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
+}
+.lastest-products-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.lastest-products-cards img{
+  width: 80%;
+  align-self: center;
+}
+.card-last-product{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/banner-1.png);
+  width:25%;
 }
-.banner1 h4 {
-  font-family: var(--font-text);
-  color: var(--labels-color);
-  font-size: clamp(0.438rem, 3vw, 2.375rem);
-  font-weight: 100;
+.card-last-product p{
+  text-align: start;
+  padding:10% 0% 0% 10%;
+  color: var(--typography-color);
+  font-family: var(--font-title-products);
+  font-size:clamp(0.625rem,1.2vw,1.25rem);
 
 }
-.banner1 h5  {
-  font-family: var(--font-tittle);
-  color: var(--typography-color);
-  font-size: clamp(0.25rem, 1vw, 0.75rem);
-  padding-left:12%;
-}*/
+.card-last-product .price{
+  font-size:clamp(0.39rem,1vw,0.65rem);
+  padding:2px 0% 0% 10%;
+  font-weight: 700;
+}
+del{
+  font-weight: 100;
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
     padding: 10px 30px 0px 30px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1400px) {
-  body {
-    padding: 10px 30px 0px 30px;
-  }
-}
-/*.banner2 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/banner-2.png);
-}
-.banner2 h4 {
-  font-family: var(--font-text);
-  color: var(--labels-color);
-  font-size: clamp(0.438rem, 3vw, 2.375rem);
-  font-weight: 100;
-
-}
-.banner2 h5  {
-  font-family: var(--font-tittle);
-  color: var(--typography-color);
-  font-size: clamp(0.25rem, 1vw, 0.75rem);
-  padding-left:12%;
-}
-*/
-
-/*Lastest products*/
-.lastest-products {
-  display: flex;
-  justify-content: center;
-  width: 1663px;
-  height: 1000px;
-  background-image: url(../img/bg-1.jpg);
-  margin: 0px;
-}
+ 
