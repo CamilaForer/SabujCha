@@ -25,7 +25,9 @@ Visual imagen principal
 Codigco CSS flexbox tarjetas
 <img src="https://user-images.githubusercontent.com/86115727/197264530-6e729eee-c8ad-4787-a772-73d8881f213f.png" alt="Codigco CSS flexbox tarjetas">
 Visual tarjetas con flexbox
-<img scr="https://user-images.githubusercontent.com/86115727/197264659-a5fa5540-ee44-497f-89b9-9722333f13ab.png" alt="Visual tarjetas con flexbox">
+<img src="https://user-images.githubusercontent.com/86115727/197264659-a5fa5540-ee44-497f-89b9-9722333f13ab.png" alt="Visual tarjetas con flexbox">
+<p>Para colocar los descuentos den las tarjetas use la pseudoelemento before en todas las tarjetas que tuvieran la clase discount</p>
+<img src="https://user-images.githubusercontent.com/86115727/197267155-1d7dca93-33fb-469e-b373-700a84f360cc.png" alt="Código CSS circulos del descuento">
 <p>Para la parte de 'Newsletter' hice uso de input con fondo transparente y un button</p>
 Codigo newstletter<br>
 <img src="https://user-images.githubusercontent.com/86115727/197265163-1d1c7db5-8897-407a-b1af-4d0b14136ec2.png" alt="Codigo newstletter">
@@ -36,3 +38,4 @@ Codigo del footer<br>
 <img src="https://user-images.githubusercontent.com/86115727/197266149-a46fbf73-19a5-4c7b-a9f4-4bcfb20efa5d.png"alt="codigo del footer">
 Visual del footer<br>
 <img src="https://user-images.githubusercontent.com/86115727/197265832-ce537594-5ece-4c21-a220-30c585d850d9.png"alt="Footer visual">
+<p>Dando como resultado la página terminada de acuerdo a las especificaciones y mockups dados</p>
