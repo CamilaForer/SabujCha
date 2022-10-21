@@ -186,6 +186,9 @@ header {
   position: relative;
   z-index: 1;
 }
+.latest-news .card-last-product img{
+  border: none;
+}
 .card-last-product p,
 .card-new-product p {
   text-align: start;
@@ -284,6 +287,7 @@ section .sheet, .logos {
 /*Latest news*/
 .latest-news{
   text-align: start;
+  background-image: url(../img/bg-1.jpg);
 }
 .latest-news img{
   padding: 4%;
@@ -314,17 +318,52 @@ section .sheet, .logos {
   text-decoration: underline;
   cursor: pointer;
 }
+/*Brand logos*/
 .logos{
   flex-flow: row wrap;
 }
-footer{
+/*Footer*/
+
+.footer{
   display: flex;
-  flex-grow: row wrap;
-  padding: 5% 0% 5% 0%;
-  background: #f3f3f3;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5% 3% 3% 12%;
+  justify-content: center;
+  background: #f8f8f8;
 }
-footer ul{
+.footer ul{
   list-style: none;
+  padding:0% 2% 0% 2%;
+  width: 25%;
+}
+.footer .list-tittle{
+  font-weight: 400;
+  font-family: var(--font-tittle-playfair);
+  font-size: clamp(1.125rem, 1.5vw,1.25rem);
+}
+.footer li{
+  font-family: var(--font-text-lora);
+  font-size: 14px;
+  line-height: 2.5;
+}
+footer .last-footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ebebeb;
+  width: 100%;
+  font-size: 14px;
+  font-family: var(--font-text-lora);
+  padding: 18px 0 20px;
+  padding-left: 7%;
+}
+.last-footer img{
+  margin-left: 360px;
+}
+.heart{
+  color: red;
 }
 @media (max-width:1366px) {
   .lastest-products p, .new-products p {
@@ -359,6 +398,10 @@ footer ul{
   .newsletter h1{
     font-size: 30px;
   }
+  .footer ul{
+    width: 50%;
+    padding-bottom: 3%;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -370,14 +413,13 @@ footer ul{
   .card-last-product,
   .card-new-product {
     width: 100%;
-
   }
   .lastest-products-cards,
 .new-products-cards {
   padding:2% 0;
 }
   .lastest-products,
-  .new-products {
+  .new-products, .latest-news {
     background:#f3f3f3;
     padding-left: 5%;
     padding-right: 5%;
@@ -394,5 +436,10 @@ footer ul{
   .newsletter button{
     width: 35%;
   }
-
+  .footer ul{
+    width: 100%;
+  }
+  .last-footer img{
+    margin-left:0px;
+  }
 }

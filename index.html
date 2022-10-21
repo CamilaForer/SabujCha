@@ -1,184 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>SabujCha</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-menu">
-        <ul>
-          <li><a>HOME</a></li>
-          <li>ABOUT</li>
-          <li>BLOG</li>
-          <li>PAGES</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <img src="img/logo.png" alt="logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>SabujCha</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-menu">
+      <ul>
+        <li><a>HOME</a></li>
+        <li>ABOUT</li>
+        <li>BLOG</li>
+        <li>PAGES</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="img/logo.png" alt="logo" />
+    </div>
+    <div class="cart">
+      <select name="coin" id="select-coin">
+        <option value="USD">USD</option>
+      </select>
+      <img src="icons/carrito-de-compras.png" alt="cart" />
+    </div>
+  </header>
+  <main>
+    <section class="home-img">
+      <div class="text-home-img1">
+        <h1>
+          Want to stay healthy <br />
+          drink matcha.
+        </h1>
+        <u>Shop Now</u>
       </div>
-      <div class="cart">
-        <select name="coin" id="select-coin">
-          <option value="USD">USD</option>
-        </select>
-          <img src="icons/carrito-de-compras.png" alt="cart" />
+    </section>
+    <section class="sale-container">
+      <div class="banner">
+        <img src="img/banner-1.png" alt="Sale-Banner" />
+        <div class="banner-content">
+          <h4>-50% Sale</h4>
+          <h5>SUMMER VACATION</h5>
+        </div>
       </div>
-    </header>
-    <main>
-      <section  class="home-img">
-          <div class="text-home-img1">
-            <h1>
-              Want to stay healthy <br />
-              drink matcha.
-            </h1>
-            <u>Shop Now</u>
-          </div> 
-      </section>
-      <section class="sale-container">
-        <div class="banner">
-          <img src="img/banner-1.png" alt="Sale-Banner" />
-          <div class="banner-content">
-            <h4>-50% Sale</h4>
-            <h5>SUMMER VACATION</h5>
-          </div>
+      <div class="banner">
+        <img src="img/banner-2.png" alt="Sale-Banner" />
+        <div class="banner-content">
+          <h4>-20% Sale</h4>
+          <h5>WINTER VACATION</h5>
         </div>
-        <div class="banner">
-          <img src="img/banner-2.png" alt="Sale-Banner" />
-          <div class="banner-content">
-            <h4>-20% Sale</h4>
-            <h5>WINTER VACATION</h5>
-            </div>
+      </div>
+    </section>
+    <section class="lastest-products">
+      <h1>Lastest Products</h1>
+      <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do </br> eiusmod tempor incididunt</p>
+      <div class="lastest-products-cards">
+        <div class="card-last-product discount" data-content="-20%">
+          <img src="img/product-1.jpg" alt="Nature close tea">
+          <p>Nature Close Tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
-      </section>
-      <section class="lastest-products">
-        <h1>Lastest Products</h1>
-        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do </br> eiusmod tempor incididunt</p>
-        <div class="lastest-products-cards">
-          <div class="card-last-product discount" data-content="-20%">
-            <img src="img/product-1.jpg" alt="Nature close tea">
-            <p>Nature Close Tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-last-product">
-            <img src="img/product-2.jpg" alt="Pink wave cup">
-            <p>Pink wave Cup</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-last-product discount" data-text="-50%">
-            <img src="img/product-3.jpg" alt="Tea and Chai">
-            <p>Tea and Chai</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-last-product">
-            <img src="img/product-4.jpg" alt="Pearly Everlasting">
-            <p>Pearly Everlasting</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
+        <div class="card-last-product">
+          <img src="img/product-2.jpg" alt="Pink wave cup">
+          <p>Pink wave Cup</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
-      </section>
-      <section >
-        <div class="sheet">
-          <img src="img/testi.png" alt="">
-          <h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, se do <br> eiusmod tempor incididunt ut labore
-          </h4>
-          <h6>
-            GREGORY PERKINS
-          </h6>
-          <h6 class="customer">Customer</h6>
+        <div class="card-last-product discount" data-text="-50%">
+          <img src="img/product-3.jpg" alt="Tea and Chai">
+          <p>Tea and Chai</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
-      </section>
-      <section class="new-products">
-        <h1>New Products</h1>
-        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do </br> eiusmod tempor incididunt</p>
-        <div class="new-products-cards">
-          <div class="card-new-product discount" data-content="-30%">
-            <img src="img/product-1.jpg" alt="BeBe Bloom tea">
-            <p>BeBe Bloom tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product discount" data-content="-60%">
-            <img src="img/product-3.jpg" alt="Que herbal Tea">
-            <p>Que herbal Tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product">
-            <img src="img/product-5.jpg" alt="Society Ice Tea">
-            <p>Society Ice Tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product">
-            <img src="img/product-7.jpg" alt="Best Friends Tea">
-            <p>Best Friends Tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product discount" data-content="-50%">
-            <img src="img/product-2.jpg" alt="Every spice Tea">
-            <p>Every spice Tea</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product">
-            <img src="img/product-4.jpg" alt="Tea and Chai">
-            <p>Tea and Chai</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product discount" data-content="-40%">
-            <img src="img/product-6.jpg" alt="Green Tea Tulsi">
-            <p>Green Tea Tulsi</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
-          <div class="card-new-product">
-            <img src="img/product-8.jpg" alt="Instant Tea Premix">
-            <p>Instant Tea Premix</p>
-            <p class="price">$100.00 - <del>$120.00</del></p>
-          </div>
+        <div class="card-last-product">
+          <img src="img/product-4.jpg" alt="Pearly Everlasting">
+          <p>Pearly Everlasting</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
-      </section>
-      <section class="newsletter"> 
-          <h1>Join to our Newsletter</h1>
-          <div class="email-suscribe">
-          <input type="email" placeholder="Your Email Address*">
-          <button>SUBSCRIBE</button>
-          </div>
-      </section>
-      <section class="latest-news">
-        <h1><u>Latest News</u></h1>
-        <div class="lastest-products-cards">
-          <div class="card-last-product">
-            <img src="img/blog-single-1.jpg" alt="Post">
-            <span>14 Sep</span>
-            <h3>Lorem ipsum sit ame co.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore</p>
-            <a>READ MORE</a>
-          </div>
-          <div class="card-last-product">
-            <img src="img/blog-single-2.jpg" alt="Post">
-            <span>20 Dec</span>
-            <h3>Lorem ipsum sit ame co.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore</p>
-            <a>READ MORE</a>
-          </div>
-          <div class="card-last-product">
-            <img src="img/blog-single-3.jpg" alt="Post">
-            <span >18 Aug</span>
-            <h3>Lorem ipsum sit ame co.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore</p>
-            <a>READ MORE</a>
-          </div>
-      </section>
-      <section class="logos">
-        <img src="img/1.jpg" alt="">
-        <img src="img/2.jpg" alt="">
-        <img src="img/3.jpg" alt="">
-        <img src="img/4.jpg" alt="">
-        <img src="img/5.jpg" alt="">
-      </section>
-    </main>
-    <footer>
+      </div>
+    </section>
+    <section>
+      <div class="sheet">
+        <img src="img/testi.png" alt="">
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, se do <br> eiusmod tempor incididunt ut labore
+        </h4>
+        <h6>
+          GREGORY PERKINS
+        </h6>
+        <h6 class="customer">Customer</h6>
+      </div>
+    </section>
+    <section class="new-products">
+      <h1>New Products</h1>
+      <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do </br> eiusmod tempor incididunt</p>
+      <div class="new-products-cards">
+        <div class="card-new-product discount" data-content="-30%">
+          <img src="img/product-1.jpg" alt="BeBe Bloom tea">
+          <p>BeBe Bloom tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product discount" data-content="-60%">
+          <img src="img/product-3.jpg" alt="Que herbal Tea">
+          <p>Que herbal Tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product">
+          <img src="img/product-5.jpg" alt="Society Ice Tea">
+          <p>Society Ice Tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product">
+          <img src="img/product-7.jpg" alt="Best Friends Tea">
+          <p>Best Friends Tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product discount" data-content="-50%">
+          <img src="img/product-2.jpg" alt="Every spice Tea">
+          <p>Every spice Tea</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product">
+          <img src="img/product-4.jpg" alt="Tea and Chai">
+          <p>Tea and Chai</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product discount" data-content="-40%">
+          <img src="img/product-6.jpg" alt="Green Tea Tulsi">
+          <p>Green Tea Tulsi</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+        <div class="card-new-product">
+          <img src="img/product-8.jpg" alt="Instant Tea Premix">
+          <p>Instant Tea Premix</p>
+          <p class="price">$100.00 - <del>$120.00</del></p>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <h1>Join to our Newsletter</h1>
+      <div class="email-suscribe">
+        <input type="email" placeholder="Your Email Address*">
+        <button>SUBSCRIBE</button>
+      </div>
+    </section>
+    <section class="latest-news">
+      <h1><u>Latest News</u></h1>
+      <div class="lastest-products-cards">
+        <div class="card-last-product">
+          <img src="img/blog-single-1.jpg" alt="Post">
+          <span>14 Sep</span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
+        <div class="card-last-product">
+          <img src="img/blog-single-2.jpg" alt="Post">
+          <span>20 Dec</span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
+        <div class="card-last-product">
+          <img src="img/blog-single-3.jpg" alt="Post">
+          <span>18 Aug</span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
+    </section>
+    <section class="logos">
+      <img src="img/1.jpg" alt="">
+      <img src="img/2.jpg" alt="">
+      <img src="img/3.jpg" alt="">
+      <img src="img/4.jpg" alt="">
+      <img src="img/5.jpg" alt="">
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
       <ul>
         <li class="list-tittle">My Account</li>
         <li>My account</li>
@@ -198,22 +204,29 @@
         <li>Return Policy</li>
       </ul>
       <ul>
-      <li class="list-tittle">Quick Links</li>
-      <li>Support Center</li>
-      <li>Term & Conditions</li>
-      <li>Shipping</li>
-      <li>Privacy Policy</li>
-      <li>Help</li>
-      <li>FAQS</li>
-    </ul>
-    <ul>
-      <li class="list-tittle">Contact Us</li>
-      <li>Your address goes here</li>
-      <li>0123456789</li>
-      <li>0123456789</li>
-      <li>demo@example.com</li>
-      <li>demo@example.com</li>
-    </ul>
-    </footer>
-  </body>
+        <li class="list-tittle">Quick Links</li>
+        <li>Support Center</li>
+        <li>Term & Conditions</li>
+        <li>Shipping</li>
+        <li>Privacy Policy</li>
+        <li>Help</li>
+        <li>FAQS</li>
+      </ul>
+      <ul>
+        <li class="list-tittle">Contact Us</li>
+        <li>Your address goes here</li>
+        <li>0123456789</li>
+        <li>0123456789</li>
+        <li>demo@example.com</li>
+        <li>demo@example.com</li>
+      </ul>
+    </div>
+    <div class="last-footer">
+      <p> © 2021<strong> SabujCha </strong>Made With
+      <p class="heart"> ❤ </p> By CodeCarnival.</p>
+      <img src="img/payment.png" alt="Payment">
+    </div>
+  </footer>
+</body>
+
 </html>
