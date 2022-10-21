@@ -9,12 +9,16 @@
 </p>
 </p>
 <p>Tomando los mockups dados como base se construyo la maquetación de la pagina web con HTML y CSS</p> <br>
+<a href="https://drive.google.com/drive/folders/15O58LqLTld3vrdly4R1xSWiiGY_Oe8gX/">Mockups desktop</a>
+<a href="https://drive.google.com/drive/folders/1o2P3HVosRcUWgLTZDDzQxqDixe4NMcUa">Mockups mobile</a>
 <p>Se construyo el header con una barra de navegación, el logo respectivo de la marca, un select para elegir la moneda con la que se va a pagar y el carrito de compras</p><br>
 Estructura HTML
 <img src="https://user-images.githubusercontent.com/86115727/197253428-872f0140-86e4-45c5-97b1-aae5275682da.png" alt="Codigo header"> 
 Visual con estilos CSS implementados para pantallas 1024px
 <img src="https://user-images.githubusercontent.com/86115727/197253627-0f55301c-0466-45c8-8791-05e0fa51aa8d.png" alt="Visual del codigo">
-Visual con estilos CSS implementados para pantallas 640px <br>
+Visual original del mockup <br>
+<img src="https://user-images.githubusercontent.com/86115727/197269371-e5e96f76-0424-4cf6-be20-900cae9cb0e3.png" alt="imagen del mockup para la barra de navegación en mobile">
+Visual con estilos CSS implementados para pantallas 640px, se cambio el posicionamiento para mejorar la navegación de la página <br>
 <img src="https://user-images.githubusercontent.com/86115727/197256988-e465c5a3-beaf-44ac-87e5-62fc06862326.png" alt="Visual del codigo para celular">
 <p>La imagen del inicio esta puesta como background para evitar conflictos con el contenido</p>
 Código imagen principal
@@ -39,3 +43,4 @@ Codigo del footer<br>
 Visual del footer<br>
 <img src="https://user-images.githubusercontent.com/86115727/197265832-ce537594-5ece-4c21-a220-30c585d850d9.png"alt="Footer visual">
 <p>Dando como resultado la página terminada de acuerdo a las especificaciones y mockups dados</p>
+<a href="https://camilaforer.github.io/SabujCha/">Despliegue de la página</a>
