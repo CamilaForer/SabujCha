@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+img{
+  max-width: 100%;
+}
 :root {
   --font-tittle-playfair: "Playfair Display", serif;
   --font-text-lora: "Lora", serif;
@@ -29,6 +32,9 @@ header {
   flex-direction: row;
   width: 33.33%;
 }
+.menu{
+  display: none;
+}
 .nav-menu ul, .logos {
   width: 100%;
   display: flex;
@@ -48,7 +54,6 @@ header {
   display: flex;
   width: 33.33%;
   justify-content: center;
-  align-items: center;
 }
 .logo img {
   cursor: pointer;
@@ -57,15 +62,16 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  width: 33.33%;
+  width: 40%;
   align-items: center;
 }
 #select-coin {
   border: none;
   font-size: 14px;
+  font-family: var(--font-text-lora);
 }
 .cart img {
-  width: 4%;
+  width: 10%;
   height: 60%;
   margin-left: 2%;
   cursor: pointer;
@@ -321,6 +327,7 @@ section .sheet, .logos {
 /*Brand logos*/
 .logos{
   flex-flow: row wrap;
+  width: 100%;
 }
 /*Footer*/
 
@@ -360,7 +367,7 @@ footer .last-footer{
   padding-left: 7%;
 }
 .last-footer img{
-  margin-left: 360px;
+  margin-left: 100px;
 }
 .heart{
   color: red;
@@ -369,11 +376,8 @@ footer .last-footer{
   .lastest-products p, .new-products p {
     max-width: 565px;
   }
-  .logos{
-    display: hidden;
-  }
 }
-@media (max-width:1024px) {
+@media (max-width:1023px) {
   body {
     padding: 25px 30px 0px 30px;
   }
@@ -403,10 +407,37 @@ footer .last-footer{
     padding-bottom: 3%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     padding: 25px 15px 0px 15px;
   }
+  .logo{
+    width: 50%;
+    padding-left: 2%;
+    justify-content: flex-start;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .cart{
+    width: 50%;
+    justify-content: end;
+  }
+  .cart img{
+    width: 10%;
+  }
+ .menu{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 0;
+ }
+ .menu img{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+ }
   .home-img{
     height: 50vh;
   }  
