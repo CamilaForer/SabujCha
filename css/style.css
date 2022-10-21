@@ -70,6 +70,7 @@ header {
   border: none;
   font-size: 14px;
   font-family: var(--font-text-lora);
+  cursor: pointer;
 }
 .cart img {
   width: 9%;
@@ -119,6 +120,7 @@ header {
 }
 .banner {
   position: relative;
+  cursor: pointer;
 }
 .banner-content {
   position: absolute;
@@ -193,6 +195,7 @@ header {
   width: 23%;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .latest-news .card-last-product img {
   border: none;
@@ -301,6 +304,7 @@ section .sheet,
   font-size: clamp(0.625rem, 1vw, 0.75rem);
   font-family: var(--font-title-products-worksans);
   text-align: center;
+  cursor: pointer;
 }
 /*Latest news*/
 .latest-news {
@@ -326,6 +330,13 @@ section .sheet,
   padding: 3% 4% 0% 4%;
   font-weight: 100;
 }
+.news{
+  justify-content: center;
+  gap: 2%;
+}
+.new{
+  width: 30%;
+}
 .latest-news p {
   font-family: var(--font-text-lora);
   font-size: 17px;
@@ -342,6 +353,9 @@ section .sheet,
 /*Brand logos*/
 .logos {
   width: 100%;
+}
+.logos img{
+  cursor: pointer;
 }
 /*Footer*/
 .footer {
@@ -366,6 +380,7 @@ section .sheet,
   font-family: var(--font-text-lora);
   font-size: 14px;
   line-height: 2.5;
+  cursor: pointer;
 }
 footer .last-footer {
   display: flex;
