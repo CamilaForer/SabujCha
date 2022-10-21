@@ -108,7 +108,7 @@ header {
 /*Sale*/
 .sale-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2%;
   padding: 0% 10% 0% 10%;
 }
@@ -326,7 +326,6 @@ section .sheet, .logos {
 }
 /*Brand logos*/
 .logos{
-  flex-flow: row wrap;
   width: 100%;
 }
 /*Footer*/
@@ -372,6 +371,9 @@ footer .last-footer{
 .heart{
   color: red;
 }
+.go-up{
+  display: none;
+}
 @media (max-width:1366px) {
   .lastest-products p, .new-products p {
     max-width: 565px;
@@ -410,6 +412,9 @@ footer .last-footer{
 @media (max-width: 768px) {
   body {
     padding: 25px 15px 0px 15px;
+  }
+  header{
+    padding-bottom: 5%;
   }
   .logo{
     width: 50%;
@@ -458,6 +463,15 @@ footer .last-footer{
   h5{
     font-size: 30px;
   }
+  .logos .hidden{
+    display: none;
+  }
+  section .sheet{
+    padding: 5%;
+  }
+  .latest-news span{
+    margin-top: 0;
+  }
   .email-suscribe {
     width:90%;
   }
@@ -472,5 +486,14 @@ footer .last-footer{
   }
   .last-footer img{
     margin-left:0px;
+  }
+  .go-up{
+    display: inline;
+    position: fixed;
+    background-color: black;
+    bottom: 55px;
+    cursor: pointer;
+    right: 12px;
+    z-index: 99999999;
   }
 }
